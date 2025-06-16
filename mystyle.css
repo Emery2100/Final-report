@@ -1,0 +1,158 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 10px;
+}
+img{
+    max-width: 65%;
+     
+}
+h2,h3{ 
+    text-align: center;
+    margin: 20px 20px;
+}
+/*header*/
+.primary-header{
+    background-color: rgb(55, 117, 55);
+    background-size: cover;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+}
+
+/*utility*/
+.about-container{
+    display: flex;
+    
+}
+
+.form-container{
+    margin: auto;
+    width: 60%;
+    
+}
+
+form{
+    background-color: rgb(194, 45, 45);
+    padding: 20px;
+}
+
+input,textarea{
+    width: 60%;
+    padding: 5x;
+    
+}
+
+form div{
+    margin-bottom: 20px;
+    
+    
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+.btn-black{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.btn-green{
+        display: inline-block;
+    background-color: rgb(55, 117, 55);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px; 
+}
+
+
+/*flex*/
+
+.main-flex{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+}
+
+.secondary-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+    
+}
+
+
+
+/*tablet view*/
+@media((min-width:601px) and (max-width:768px)){
+.main-flex{
+    flex-direction: column;
+    text-align: justify;
+    
+}
+.main-flex div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-flex img{
+    width: 20%;
+    margin: 10px;
+}
+
+.houses-container{
+flex-direction: column;
+}
+
+.house-item{
+margin: 10px 0px;
+}
+}
+
+
+/*mobile view*/
+@media((max-width:600px)){
+
+.main-flex{
+    flex-direction: column;
+    text-align: justify;
+    
+}
+.main-flex div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-flex img{
+    width: 40%;
+}
+}
